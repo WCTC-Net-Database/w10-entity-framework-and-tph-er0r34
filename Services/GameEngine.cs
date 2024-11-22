@@ -1,16 +1,19 @@
-﻿namespace W9_assignment_template.Services;
+﻿using W9_assignment_template.Services;
 
-public class GameEngine
+namespace W9_assignment_template
 {
-    private readonly Menu _menu;
-
-    public GameEngine(Menu menu)
+    public class GameEngine
     {
-        _menu = menu;
-    }
+        private readonly Menu _menu;
 
-    public void Run()
-    {
-        _menu.Show();
+        public GameEngine(Menu menu)
+        {
+            _menu = menu;
+        }
+
+        public void Run()
+        {
+            _menu.Show();
+        }
     }
 }
